@@ -13,7 +13,7 @@ form.addEventListener("submit", (event)=>{
     document.getElementById('cantidad').innerHTML = cantidad.value;
     document.getElementById('precio').innerHTML = precio.value;
     document.getElementById('impuesto').innerHTML = valorimpuesto;
-    document.getElementById('total').innerHTML = res;
+    document.getElementById('total').innerHTML = res-valorimpuesto;
     
 });
 
