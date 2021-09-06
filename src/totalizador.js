@@ -8,11 +8,13 @@ form.addEventListener("submit", (event)=>{
     event.preventDefault();
     let res= precioTotal(cantidad.value,precio.value);
     let valorimpuesto = ImpFORstate(res,estado.value);
-    alert("Codigo de estado: "+estado.value+"\n"+"Valor Impuesto: "+valorimpuesto);
+    //alert("Codigo de estado: "+estado.value+"\n"+"Valor Impuesto: "+valorimpuesto);
     //alert("Cantidad: "+cantidad.value+"\n"+"Precio: "+precio.value+"\n"+"PrecioTotal: "+res);
     document.getElementById('cantidad').innerHTML = cantidad.value;
     document.getElementById('precio').innerHTML = precio.value;
+    document.getElementById('impuesto').innerHTML = valorimpuesto;
     document.getElementById('total').innerHTML = res;
+    
 });
 
 function precioTotal(cantidad,precio){
