@@ -11,9 +11,17 @@
         <input type="number" id="cantidad-input" /><br />
         <label for="precio-input">Precio</label><br />
         <input type="number" id="precio-input" /><br />
-        <label for="estado-input">Codigo de Estado</label><br />
-        <input type="text" id="estado-input" /><br />
-
+        <div>
+            <label>Codigo de estado</label><br>
+            <select id="estado-input">
+              <option value="UT">UT</option>
+              <option value="NV">NV</option>
+              <option value="TX">TX</option>
+              <option value="AL">AL</option>
+              <option value="CA">CA</option>
+            </select>
+        </div>
+        <br>
 
         <input type="submit" value="Calcular" />
     </form>
