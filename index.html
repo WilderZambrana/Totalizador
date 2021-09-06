@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 </head>
+
 <body>
     <h1>Totalizador</h1>
     <form id="totalizador-form">
-        <label for="cantidad-input">Cantidad</label><br/>
-        <input type="number" id="cantidad-input"/><br/>
-        <label for="precio-input">Precio</label><br/>
-        <input type="number" id="precio-input"/><br/>
+        <label for="cantidad-input">Cantidad</label><br />
+        <input type="number" id="cantidad-input" /><br />
+        <label for="precio-input">Precio</label><br />
+        <input type="number" id="precio-input" /><br />
 
-        <input type="submit" value="Calcular"/>
+        <input type="submit" value="Calcular" />
     </form>
-    <h3>Cantidad: <p id="cantidad"></p></h3>
-    <h3>Precio: <p id="precio"></p></h3>
-    <h3>Total: <p id="total"></p></h3>
+    <label><strong>Cantidad: </strong><label id="cantidad"></label></label>
+    <label><strong>Precio: </strong><label id="precio"></label></label>
+    <label><strong>Total: </strong><label id="total"></label></label>
+
+    <label><strong>Porcentaje de Impuestos: </strong></label><br>
+    <table>
+        <tr>
+            <th>Estado</th>
+            <th>Tasa de Impuesto</th>
+        </tr>
+        <tr>
+            <td>UT</td>
+            <td>6.65%</td>
+        </tr>
+        <tr>
+            <td>NV</td>
+            <td>8.00%</td>
+        </tr>
+        <tr>
+            <td>TX</td>
+            <td>6.25%</td>
+        </tr>
+        <tr>
+            <td>AL</td>
+            <td>4.00%</td>
+        </tr>
+        <tr>
+            <td>CA</td>
+            <td>8.25%</td>
+        </tr>
+    </table>
 
 
     <script src="./src/index.js"></script>
 </body>
+
 </html>
